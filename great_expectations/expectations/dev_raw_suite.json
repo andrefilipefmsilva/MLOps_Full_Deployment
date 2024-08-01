@@ -1,0 +1,177 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "dev_raw_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "readmitted",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "encounter_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "encounter_id",
+          "patient_nbr",
+          "race",
+          "gender",
+          "age",
+          "weight",
+          "admission_type_id",
+          "discharge_disposition_id",
+          "admission_source_id",
+          "time_in_hospital",
+          "payer_code",
+          "medical_specialty",
+          "num_lab_procedures",
+          "num_procedures",
+          "num_medications",
+          "number_outpatient",
+          "number_emergency",
+          "number_inpatient",
+          "diag_1",
+          "diag_2",
+          "diag_3",
+          "number_diagnoses",
+          "max_glu_serum",
+          "A1Cresult",
+          "change",
+          "diabetesMed",
+          "readmitted"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "change",
+        "value_set": [
+          "Ch",
+          "No"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "diabetesMed",
+        "value_set": [
+          "Yes",
+          "No"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "time_in_hospital",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "num_lab_procedures",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "num_procedures",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "num_medications",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "number_outpatient",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "number_emergency",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "number_inpatient",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "number_diagnoses",
+        "min_value": -1,
+        "strict_min": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "age",
+        "regex": "\\[.*?\\)"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "diabetic_data.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "dev_raw_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2024-06-26T19:51:53.900624Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.12"
+  }
+}
