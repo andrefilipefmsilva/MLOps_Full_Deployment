@@ -4,7 +4,7 @@ __Note__: Due to problems with Git LFS, this repo is not clonable. You will have
 
 Project done as part of the Machine Learning Operations course at Nova IMS.
 
-There are some limitations due to time constraints, but overall this project shows the ability to implement modular code, and implement and end-to-end ML workflow pipeline following the best MLOps practices.
+There are some limitations due to time constraints, but overall this project shows the ability to implement modular code, and implement an end-to-end ML workflow pipeline following the best MLOps practices.
 
 Final work provided as was delivered.
 
